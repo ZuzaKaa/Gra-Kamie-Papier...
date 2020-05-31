@@ -2,7 +2,7 @@ const game = () => {
     let pScore = 0;
     let cScore = 0;
   
-    //Zaczynam gre
+    //Rozpoczęcie gry
     const startGame = () => {
       const playBtn = document.querySelector(".intro button");
       const introScreen = document.querySelector(".intro");
@@ -63,7 +63,7 @@ const game = () => {
         winner.textContent = "Remis";
         return;
       }
-      //Sprawdzania czy kamień
+      //Sprawdzanie czy kamień
       if (playerChoice === "Kamień") {
         if (computerChoice === "Nożyce") {
           winner.textContent = "Gracz wygrywa";
@@ -77,7 +77,7 @@ const game = () => {
           return;
         }
       }
-      //Sprawdzanie czy papir
+      //Sprawdzanie czy papier
       if (playerChoice === "Papier") {
         if (computerChoice === "Nożyce") {
           winner.textContent = "Przeglądarka wygrywa";
@@ -107,10 +107,10 @@ const game = () => {
       }
     };
   
-    //wywolanie funkcji
+    //Wywołanie funkcji
     startGame();
     playMatch();
   };
   
-  //rozpoczecie gry
+  //Rozpoczęcie gry
   game();
